@@ -12,7 +12,7 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(
 );
 
 export const useTheme = () => {
-  const contextTheme = useContext<ThemeContextType | undefined>(ThemeContext);
+  const contextTheme = useContext(ThemeContext);
 
   return contextTheme;
 };

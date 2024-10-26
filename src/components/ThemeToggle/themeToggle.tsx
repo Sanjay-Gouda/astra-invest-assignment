@@ -64,7 +64,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 export const ThemeToggle = () => {
-  const { handleToggle } = useTheme();
+  const { theme, handleToggle } = useTheme();
 
   const handleChange = (event: SyntheticEvent) => {
     const isToggled = event.target.checked;
@@ -75,7 +75,7 @@ export const ThemeToggle = () => {
     <FormGroup>
       <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }} />}
-        label="Theme"
+        label={theme.palette.mode === "light" ? "Light" : "Dark"}
         onChange={handleChange}
       />
     </FormGroup>
