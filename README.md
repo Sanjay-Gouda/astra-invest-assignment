@@ -1,9 +1,6 @@
 # astrainvest-task
 This project is built using **Next.js** and **TypeScript**, with **React Query** for data fetching and state management. It leverages **MUI 6** for UI components and styling, supporting both light and dark themes with MUI’s inbuilt theme pattern.
 
-# Project Name
-
-A [Next.js] and [TypeScript] based web application designed for efficient data management, state handling, and user experience. This project utilizes the latest web technologies to ensure high performance, a rich design, and smooth user interactions.
 
 ## Tech Stack
 
