@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# astrainvest-task
+This project is built using **Next.js** and **TypeScript**, with **React Query** for data fetching and state management. It leverages **MUI 6** for UI components and styling, supporting both light and dark themes with MUI’s inbuilt theme pattern.
+
+# Project Name
+
+A [Next.js] and [TypeScript] based web application designed for efficient data management, state handling, and user experience. This project utilizes the latest web technologies to ensure high performance, a rich design, and smooth user interactions.
+
+## Tech Stack
+
+- **Framework**: Next.js
+- **Language**: TypeScript
+- **Package Manager**: Yarn
+- **State Management & Data Fetching**: React Query
+- **Design Library**: MUI 6
+- **Theming**: MUI inbuilt support for dark and light modes
+- **Context Store**: Custom context store to manage theme toggling
+
+## Features
+
+- **Dynamic Data Management**: Leveraging [React Query](https://tanstack.com/query/latest) for optimized data fetching and state management.
+- **Custom Theming**: Built-in dark and light themes using MUI's inbuilt theme pattern, with a context store to track theme changes.
+- **UI/UX**: Styled with MUI 6 for a responsive, consistent, and modern design.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ensure you have the following installed:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Sanjay-Gouda/astrainvest-task.git
+    cd astrainvest-task
+    ```
 
-## Learn More
+2. Install dependencies:
+    ```bash
+    yarn install
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Start the development server:
+    ```bash
+    yarn dev
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application should now be running at [http://localhost:3000](http://localhost:3000).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+- **`/src`**: Contains the main application source code.
+- **`/components`**: Reusable UI components.
+- **`/context`**: Context provider for global theme management.
+- **`/pages`**: Next.js page components, corresponding to application routes.
+- **`/styles`**: Global and component-specific styles.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Theming
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The application supports dark and light themes powered by MUI's inbuilt theme configuration. A context store tracks theme preference and allows users to toggle between themes, preserving their choice across sessions.
+
+## API Integration
+
+Data is fetched via React Query, enabling efficient data retrieval and caching for a seamless user experience. React Query handles all API calls, reducing network requests and managing application state effectively.
+
+## Scripts
+
+- **`yarn dev`**: Start the development server.
+- **`yarn build`**: Build the application for production.
+
+
