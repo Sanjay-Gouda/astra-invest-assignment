@@ -7,9 +7,7 @@ export type ThemeContextType = {
   theme: string;
   handleToggle: (isToggle: boolean) => void;
 };
-export const ThemeContext = createContext<ThemeContextType | undefined>(
-  undefined
-);
+export const ThemeContext = createContext<any>({});
 
 export const useTheme = () => {
   const contextTheme = useContext(ThemeContext);

@@ -66,7 +66,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 export const ThemeToggle = () => {
   const { theme, handleToggle } = useTheme();
 
-  const handleChange = (event: SyntheticEvent) => {
+  const handleChange = (event: any) => {
     const isToggled = event.target.checked;
     handleToggle(isToggled);
   };
