@@ -4,7 +4,7 @@ import { Box, Container } from "@mui/material";
 
 export default function Home() {
   return (
-    <Container maxWidth="lg" sx={{ marginTop: "80px" }}>
+    <Container maxWidth="lg" sx={{ marginTop: "40px" }}>
       <Box sx={{ display: "flex", width: "100%", justifyContent: "end" }}>
         <ThemeToggle />
       </Box>
