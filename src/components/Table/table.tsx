@@ -12,7 +12,7 @@ import Paper from "@mui/material/Paper";
 import { useQuery } from "@tanstack/react-query";
 import { BASE_URL } from "@/constants/baseUrl";
 import { Loader } from "../Loader/loader";
-import { IUser } from "./TTable";
+import { TUser } from "./TTable";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -59,7 +59,7 @@ export const DataTable = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {userData?.map((item: IUser) => (
+          {userData?.map((item: TUser) => (
             <StyledTableRow key={item.id}>
               <StyledTableCell align="left">{item?.name}</StyledTableCell>
               <StyledTableCell align="right">{item?.email}</StyledTableCell>

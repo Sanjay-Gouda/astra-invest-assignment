@@ -1,6 +1,6 @@
 "use client";
 
-import { Backdrop, Button, CircularProgress } from "@mui/material";
+import { Backdrop, CircularProgress } from "@mui/material";
 import React, { FC } from "react";
 import { TLoaderProps } from "./TLoader";
 

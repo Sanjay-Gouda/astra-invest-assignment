@@ -2,12 +2,16 @@
 
 import React, { createContext, ReactNode, useContext, useState } from "react";
 import { darkTheme, lightTheme } from "@/constants/theme";
+import { Theme } from "@mui/material";
 
 export type ThemeContextType = {
-  theme: string;
+  theme: Theme;
   handleToggle: (isToggle: boolean) => void;
 };
-export const ThemeContext = createContext<any>({});
+export const ThemeContext = createContext<ThemeContextType>({
+  theme: lightTheme,
+  handleToggle: () => {},
+});
 
 export const useTheme = () => {
   const contextTheme = useContext(ThemeContext);
@@ -16,7 +20,7 @@ export const useTheme = () => {
 };
 
 const ThemeContextProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setTheme] = useState<any>(lightTheme);
+  const [theme, setTheme] = useState<Theme>(lightTheme);
 
   const handleToggle = (isToggle: boolean) => {
     if (isToggle) {
